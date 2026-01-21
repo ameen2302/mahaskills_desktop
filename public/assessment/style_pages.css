@@ -1,0 +1,251 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	background: #fff;
+	color: #2d343e;
+	font-family: Cambria;
+	font-size: 16px;
+}
+b {
+font-size:15px;
+	 font-weight: bold; 
+}
+.list_1 {
+	padding-left: 20px;
+}
+.list_2 {
+	padding-left: 18px;
+}
+.list_1 > li {
+	line-height: 28px;
+	list-style: disc;
+}
+.list_2 > li {
+	line-height: 26px;
+	list-style: circle;
+}
+.bold_sty {
+	 font-weight: bold; 
+}
+table {
+	border-collapse: collapse;
+	margin: 10px 0px;
+}
+table td {
+	border: 1px solid #4e4e4e;
+	padding: 5px;
+	text-align: center;
+}
+table thead {
+	border: 1px solid #B8AEAE;
+}
+p {
+	line-height: 32px;
+}
+li {
+	list-style: none;
+}
+a:link {
+	outline: none;
+}
+a, i {
+	text-decoration: none;
+}
+.clearfix:after, .clearfix:before {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+}
+.wrapper_innerpages {
+	margin: 0 auto;
+	padding: 20px 0px !important;
+	width: 90%;
+}
+h1 {
+	font-size:22px;
+	color:#424851;
+}
+h2 {
+	font-size:16px;
+	padding-top:10px;
+	padding-bottom:5px;
+		color:#424851;
+}
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+table thead tr th {
+	background: #B8AEAE;
+	padding: 5px;
+}
+.video_part {
+	display: inline-block;
+	height: auto;
+	width: auto;
+}
+.video_thumb {
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+	display: inline-block;
+	height: 474px;
+	overflow-X: hidden;
+	overflow-Y: auto;
+	padding: 8px;
+	vertical-align: top;
+	width: auto;
+}
+.video_thumb ul li img {
+	display: block;
+	opacity: 0.5;
+	transition: all 0.2s linear;
+	width: 100%;
+}
+.video_thumb ul li img:hover {
+	opacity: 1;
+	transition: all 0.2s linear;
+}
+.video_thumb ul li span {
+	background: #4cc0ea;
+	display: block;
+	padding: 5px 0px;
+}
+.container ul.menu li {
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	float: none;
+	font-size: 14px;
+	margin-bottom: 10px;
+	width: 130px;
+}
+.container ul.menu li.active {
+	background: #4CC0EA;
+	color: #ffffff;
+	top: 1px;
+}
+.content {
+	border-radius: 0px 0px 5px 5px;
+	font-size: 11px;
+	margin: 0pt auto;
+}
+.vid_content_1 {
+	display: block;
+}
+.vid_content {
+}
+.pop_main {
+	background: rgba(0,0,0,0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 1500;
+}
+.pop_main:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.close_pop img {
+	float: right !important;
+}
+.video_div {
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	height: auto;
+	margin: 0 auto;
+	padding: 15px 4px 15px 15px;
+	position: relative;
+	vertical-align: middle;
+	width: 780px;
+}
+.video_block_1, .video_block_2, .video_block_3 {
+}
+.popup {
+	background-color: #E6E9F2;
+	border: solid 2px #B9EAF0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: none;
+	left: 30%;
+	min-height: 300px;
+	moz-border-radius: 15px;
+	position: absolute;
+	top: 30%;
+	width: 400px;
+	z-index: 1002;
+}
+.middleLayer {
+	background-color: #111;
+	left: 0px;
+	min-height: 100%;
+	opacity: 0.65;
+	overflow: auto;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+.popupTitleBox {
+	background-color: #0089BF;
+	border: solid 1px #0089BF;
+	height: 30px;
+	padding-left: 5px;
+	text-valign: center;
+}
+video {
+	/* float: left; */
+	vertical-align: top;
+}
+.img_prop {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+.equ_img {
+}
+.point_video {
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0px 2px;
+
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+#video-onscreen {
+	/* video border */
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 20px;
+}
+#video-slider {
+	border: 1px solid #ccc;
+}
+.video-align {
+	vertical-align: top;
+	float: left;
+}
+.point_video{
+
+}

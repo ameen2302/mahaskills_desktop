@@ -1,0 +1,122 @@
+{
+  "name": "MAHASKILLS",
+  "version": "1.4.2",
+  "private": true,
+  "author": "SKILL PAGE",
+  "description": "Offline Content App for ITI",
+  "main": "public/electron.js",
+  "homepage": ".",
+  "build": {
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "icon": "./icon.ico"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^28.1.5",
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.1.5",
+    "antd": "^4.22.1",
+    "archiver": "^5.3.1",
+    "axios": "^0.27.2",
+    "check-disk-space": "^3.3.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs-extra": "^10.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build -p",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently -k \"BROWSER=none yarn start\" \"yarn:electron\"",
+    "electron": "wait-on tcp:3000 && electron .",
+    "package": "react-scripts build && electron-forge package",
+    "make-mac": "react-scripts build && electron-forge make --platform darwin",
+    "make-linux": "react-scripts build && electron-forge make --platform linux",
+    "make": "react-scripts build && electron-forge make",
+    "mwl": "react-scripts build && npx electron-builder -mwl",
+    "m": "react-scripts build && npx electron-builder -m",
+    "w": "react-scripts build && npx electron-builder build -w"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
+    "@types/pdfjs-dist": "^2.10.378",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
+    "electron": "^21.3.0",
+    "electron-builder": "^23.6.0",
+    "electron-is-dev": "^2.0.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "wait-on": "^6.0.1"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "LearnEngg"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
