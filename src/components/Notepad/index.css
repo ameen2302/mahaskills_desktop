@@ -1,0 +1,60 @@
+.notepad {
+  background: #fff2b2;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  position: fixed;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.notepad button {
+  padding: 0.5rem 1rem;
+  background: #fffae5;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.notepad textarea {
+  background: #fffae5;
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.notepad textarea:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.notepad h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.notepad-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.notepad-textarea {
+  position: relative;
+}
+
+.notepad-textarea .error {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  font-size: 0.75rem;
+  color: #FF2424;
+}

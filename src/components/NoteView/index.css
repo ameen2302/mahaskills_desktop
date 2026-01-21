@@ -1,0 +1,32 @@
+.noteview-container {
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  position: fixed;
+  top: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff2b2;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 500px;
+  z-index: 10;
+  pointer-events: auto;
+  border-radius: 0 0 5px 5px;
+  /* animation-name: scrollIntoView;
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  overflow: hidden; */
+}
+
+.noteview-container p {
+  text-align: left;
+  background: #fffae5;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.noteview-container h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
